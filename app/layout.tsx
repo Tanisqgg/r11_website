@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website"
   },
-  icons: [{ rel: "icon", url: "/favicon.svg" }]
+  icons: [{ rel: "icon", url: "/logo.png" }]
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
