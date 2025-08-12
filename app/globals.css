@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0b10;
+  --fg: #e6e6f0;
+}
+
+html, body {
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(255, 46, 99, 0.12), transparent),
+              radial-gradient(900px 500px at 80% 10%, rgba(93, 63, 211, 0.18), transparent),
+              #0b0b10;
+  color: var(--fg);
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10;
+}
+
+.section {
+  @apply py-20 md:py-28;
+}
+
+.card {
+  @apply glass rounded-2xl p-6 shadow-soft;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-medium tracking-tight transition;
+}
+
+.btn-primary {
+  @apply btn bg-brand text-white hover:bg-brand/90;
+}
+
+.btn-secondary {
+  @apply btn bg-white/10 text-white hover:bg-white/20;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/90;
+}
