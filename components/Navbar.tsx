@@ -9,9 +9,13 @@ export function Navbar() {
     return (
         <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/40 backdrop-blur">
             <div className="container flex h-20 items-center justify-between">{/* h-20 = 80px */}
-                <Link href="#" aria-label="RedElevenLabs" className="flex items-center">
-                    <img src="/logo.png" alt="RedElevenLabs"
-                         className="h-full max-h-16 w-auto object-contain -my-1 shrink-0"/>
+                <Link href="#" aria-label="redelevenlabs" className="flex items-center">
+                    <img
+                        src="/logo.png"
+                        alt="redelevenlabs"
+                        width={320} height={80}          // intrinsic size (any values OK)
+                        className="h-16 md:h-24 w-auto object-contain"
+                    />
                     <span className="sr-only">RedElevenLabs</span>
                 </Link>
 
